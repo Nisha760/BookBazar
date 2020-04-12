@@ -4,20 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../BookBazar/styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Book Bazar</title>
 </head>
 <body>
     
 
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
         <h1>Book Bazar</h1>
         <p>Buy and Sell Books</p>
     </div>
 
+    <div class="container-fluid">
+        <h1>About our website</h1>
+        <p>About our website</p>
+    </div>
+
+
+    <section class="container-fluid contact-section my-5">
+        
+        <div class="card">
+
+            <div class="row">
+
+                <div class="col-9">
+
+                    <div class="card-body py-5">
+                        <h3 class="mb-3"> <img src="../images/envelope.png" class="mr-2" style="height: 45px; width: 45px;"> Write to Us</h3>
+
+                        <div class="row mb-4">
+
+                            <div class="col-6">
+                                <div class="form">
+                                    <input type="text" id="name" name="name" required>                                   
+                                    <label for="name" class="label-name">
+                                        <span class="content-name">Your name</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email" class="label-email">
+                                        <span class="content-email">Your email</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-4">
+
+                            <div class="col-12">
+                                <div class="form">
+                                    <input type="text" id="subject" name="subject" required>                                   
+                                    <label for="subject" class="label-subject">
+                                        <span class="content-subject">Subject</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form" style="position: relative;">
+                                    <textarea id="message" name="message" required></textarea>
+                                    <label for="message" class="label-message">
+                                        <span class="content-message">Your message</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-5" style="position: relative;">
+                            <div class="col-12">
+                                <button class="btn btn-default pull-right contact-send-button" type="submit">
+                                    <img src="../images/send-icon-4.png">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3 contact-information">
+                    <div class="card-body h-100 text-center text-white py-5" style="background-color: #103f6d">
+
+                        <h3 class="my-4 pb-2 text-white"> Contact <br>Information </h3>
+
+                        <hr class="hr-light my-4">
+                        <ul class="list-group text-left ml-4">
+                            <li class="list-unstyled">
+                               <p> <img src="../images/marker-icon-3.png" class="pr-1"> Address </p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p> <img src="../images/phone-icon-1.png" class="pr-1"> +1011-223344</p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p> <img src="../images/envelope-24.png" class="pr-1"> contact@gmail.com</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+    </section>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
