@@ -3,31 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/index.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    
+    
     <title>Book Bazar</title>
+    
 </head>
 <body>
     
 
-    <div class="jumbotron text-center">
-        <h1>Book Bazar</h1>
-        <p>Buy and Sell Books</p>
+    
+    
+
+    <div class="jumbotron-outer">
+        
+        <nav class="navbar navbar-custom fixed-top navbar-expand-lg" id="navbar">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catalogue">Catalogue</a>
+              </li>
+             <li>
+                <a class="nav-link" href="#buy">Buy</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sell">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>                
+            </ul>
+<!--
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+-->
+          </div>
+        </nav>
+        
+        <div class="text-center jumbotron">
+            <h1>Book Bazar</h1>
+            <p>Buy and Sell Books</p>
+        </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <h1>About our website</h1>
         <p>About our website</p>
     </div>
+    
+    
+    <div style="paddijng: 20px; background-color: #efefef">
+        <div class="container-fluid animation-element slide-left" id="catalogue">
+            <div class="row catalogue">
+                <div class="col-8 pl-4 pt-4">
+                    <h1 class="ml-4 mt-4">Catalogue</h1>
+                    <p class="ml-4">content</p>
+                </div>
+
+                <div class="col-4 pl-4 pt-4 pr-4 pb-4" style="display: flex;">
+                    <div class="catalogue-img">
+                        <img src="../images/book-stack-100.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid animation-element slide-right" id="buy">
+            <div class="row buy">
+                <div class="col-4 pl-4 pt-4 pr-4 pb-4" style="display: flex;">
+                    <div class="catalogue-img">
+                        <img src="../images/buy-100.png">
+                    </div>
+                </div>
+
+                <div class="col-8 pl-4 pt-4">
+                    <h1 class="ml-4 mt-4">Buy</h1>
+                    <p class="ml-4">content</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid animation-element slide-left" id="sell">
+            <div class="row catalogue">
+                <div class="col-8 pl-4 pt-4">
+                    <h1 class="ml-4 mt-4">Sell</h1>
+                    <p class="ml-4">content</p>
+                </div>
+
+                <div class="col-4 pl-4 pt-4 pr-4 pb-4" style="display: flex;">
+                    <div class="catalogue-img">
+                        <img src="../images/sell-100.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
 
 
-    <section class="container-fluid contact-section my-5">
+    <section class="container-fluid contact-section my-5" id="contact">
         
         <div class="card">
 
             <div class="row">
 
-                <div class="col-9">
+                <div class="col-8" style="background-color: #efefef">
 
                     <div class="card-body py-5">
                         <h3 class="mb-3"> <img src="../images/envelope.png" class="mr-2" style="height: 45px; width: 45px;"> Write to Us</h3>
@@ -45,7 +143,7 @@
 
                             <div class="col-6">
                                 <div class="form">
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="text" id="email" name="email" required>
                                     <label for="email" class="label-email">
                                         <span class="content-email">Your email</span>
                                     </label>
@@ -89,7 +187,7 @@
 
                 </div>
 
-                <div class="col-3 contact-information">
+                <div class="col-4 contact-information">
                     <div class="card-body h-100 text-center text-white py-5" style="background-color: #103f6d">
 
                         <h3 class="my-4 pb-2 text-white"> Contact <br>Information </h3>
@@ -116,10 +214,73 @@
         
     </section>
 
+    
+    
+    
+    
+    <script>
+    
+        console.log('hey');
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       
+        var $animation_elements = $('.animation-element');
+        var $window = $(window);
+
+        function check_if_in_view() {
+          var window_height = $window.height();
+          var window_top_position = $window.scrollTop();
+          var window_bottom_position = (window_top_position + window_height);
+
+          $.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('in-view');
+            } else {
+              $element.removeClass('in-view');
+            }
+          });
+        }
+        
+        function navbarColor() {
+            var $jumbotron_outer = $('.jumbotron-outer');
+            var window_top_position = $window.scrollTop();
+            var jumbotron_height = $jumbotron_outer.outerHeight();
+            
+            if(window_top_position+70 >= jumbotron_height) {
+                $('.navbar-custom').addClass('colored');
+            }
+            
+            else {
+                $('.navbar-custom').removeClass('colored');
+            }
+    
+        }
+ 
+
+//        $window.on('scroll resize', check_if_in_view);
+              
+
+        window.addEventListener('scroll', check_if_in_view);
+        window.addEventListener('scroll', navbarColor);
+        
+        $window.trigger('scroll');
+        
+        $(document).ready(function(){
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 10
+            });
+        })
+        
+    </script>
+
+   
+    
 </body>
 </html>
